@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<center>
+
+    <form method="POST">
+        {% csrf_token %}
+        <p>are you sure you want to delete???</p>
+        <input type="submit">
+        </form>
+</center>
+{% endblock %}
